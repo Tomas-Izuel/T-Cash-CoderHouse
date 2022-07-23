@@ -1,0 +1,112 @@
+:root{
+    --negro: #242132;
+    --azul: #746CFE;
+    --resaltado: #AE8CFA;
+    --blanco: #FEFCFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Ubuntu';
+    background-color: var(--negro);
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--blanco);
+}
+
+h1{
+    font-size: 6em;
+}
+
+header{
+    width: 100%;
+    height: 5.5em;
+    background-color: #736cfe52;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+header svg{
+    width: 3.5em;
+    fill: var(--resaltado);
+}
+
+header nav{
+    margin-right: 3em;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+    padding: 1em;
+}
+
+a{
+    text-decoration:none;
+    color: #FEFCFF;
+}
+
+main{
+    width: 100%;
+}
+
+main::after{
+    content: "";
+    background-image: url("../media/papyrus-dark.webp");
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cripto{
+    width: 40%;
+    padding: 1em;
+}
+
+.home img{
+    transform: rotate(10deg);
+    filter: drop-shadow(0 0 50px#af8cfa70);
+}
+
+.more div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer svg{
+    fill: var(--blanco);
+    width: 3em;
+}
